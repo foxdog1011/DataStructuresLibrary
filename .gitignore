@@ -1,0 +1,15 @@
+# 編譯生成的文件
+*.exe
+*.o
+*.obj
+*.dll
+*.lib
+
+# Visual Studio Code 配置文件
+.vscode/
+
+# PowerShell 調試文件
+*.ps1~
+
+# 其他臨時文件
+*.tmp

@@ -3,7 +3,7 @@
 #include "tree.h"
 
 /**
- * @brief 創建一個新的二叉樹
+ * @brief 創建一個新的二元樹
  */
 Tree* create_tree() {
     Tree* tree = (Tree*)malloc(sizeof(Tree));
@@ -16,7 +16,7 @@ Tree* create_tree() {
 }
 
 /**
- * @brief 插入節點到二叉樹
+ * @brief 插入節點到二元樹
  */
 bool insert_tree(Tree* tree, int data) {
     if (!tree) return false;
@@ -69,7 +69,7 @@ void preorder_traverse_node(TreeNode* node, void (*func)(int)) {
 }
 
 /**
- * @brief 前序遍歷二叉樹
+ * @brief 前序遍歷二元樹
  */
 void preorder_traverse(Tree* tree, void (*func)(int)) {
     if (!tree || !func) return;
@@ -87,7 +87,7 @@ void inorder_traverse_node(TreeNode* node, void (*func)(int)) {
 }
 
 /**
- * @brief 中序遍歷二叉樹
+ * @brief 中序遍歷二元樹
  */
 void inorder_traverse(Tree* tree, void (*func)(int)) {
     if (!tree || !func) return;
@@ -105,7 +105,7 @@ void postorder_traverse_node(TreeNode* node, void (*func)(int)) {
 }
 
 /**
- * @brief 後序遍歷二叉樹
+ * @brief 後序遍歷二元樹
  */
 void postorder_traverse(Tree* tree, void (*func)(int)) {
     if (!tree || !func) return;
@@ -156,7 +156,7 @@ TreeNode* delete_tree_node_helper(TreeNode* root, int data, bool* success) {
 }
 
 /**
- * @brief 刪除二叉樹中的節點
+ * @brief 刪除二元樹中的節點
  */
 bool delete_tree_node(Tree* tree, int data) {
     if (!tree) return false;
@@ -166,7 +166,7 @@ bool delete_tree_node(Tree* tree, int data) {
 }
 
 /**
- * @brief 釋放二叉樹佔用的內存
+ * @brief 釋放二元樹佔用的內存
  */
 void free_tree_node(TreeNode* node) {
     if (!node) return;
@@ -176,7 +176,7 @@ void free_tree_node(TreeNode* node) {
 }
 
 /**
- * @brief 釋放二叉樹佔用的內存
+ * @brief 釋放二元樹佔用的內存
  */
 void free_tree(Tree* tree) {
     if (!tree) return;

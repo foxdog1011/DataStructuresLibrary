@@ -16,7 +16,6 @@ void print_node(int data) {
 }
 
 int main() {
-    // 示例：操作堆疊
     Stack* stack = create_stack();
     if (!stack) {
         fprintf(stderr, "Failed to create stack\n");
@@ -59,7 +58,6 @@ int main() {
         free_stack(loaded_stack);
     }
 
-    // 示例：操作佇列
     Queue* queue = create_queue();
     if (!queue) {
         fprintf(stderr, "Failed to create queue\n");
@@ -98,7 +96,6 @@ int main() {
         free_queue(loaded_queue);
     }
 
-    // 示例：操作雙向鏈表
     LinkedList* list = create_linkedlist();
     if (!list) {
         fprintf(stderr, "Failed to create linked list\n");
@@ -139,7 +136,6 @@ int main() {
         free_linkedlist(loaded_list);
     }
 
-    // 示例：操作哈希表
     HashTable* table = create_hashtable(10);
     if (!table) {
         fprintf(stderr, "Failed to create hash table\n");
@@ -175,7 +171,6 @@ int main() {
         free_hashtable(loaded_table);
     }
 
-    // 示例：操作二叉樹
     Tree* tree = create_tree();
     if (!tree) {
         fprintf(stderr, "Failed to create tree\n");

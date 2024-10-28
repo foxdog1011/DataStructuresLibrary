@@ -348,7 +348,7 @@ HashTable* load_hashtable(const char* filename, FileType type) {
         return NULL;
     }
 
-    // 假設哈希表大小為 10，您可以根據需要調整
+
     HashTable* table = create_hashtable(10);
     if (!table) {
         fclose(file);
@@ -371,11 +371,11 @@ HashTable* load_hashtable(const char* filename, FileType type) {
 }
 
 /**
- * @brief 保存二叉樹到文件（中序遍歷）
+ * @brief 保存二元樹到文件（中序遍歷）
  *
- * 將二叉樹的中序遍歷結果保存到指定的文本或二進制文件中。
+ * 將二元樹的中序遍歷結果保存到指定的文本或二進制文件中。
  *
- * @param tree 指向要保存的二叉樹
+ * @param tree 指向要保存的二元樹
  * @param filename 文件名
  * @param type 文件類型（文本或二進制）
  * @return 成功則返回 true，否則返回 false
@@ -407,13 +407,13 @@ bool save_tree(Tree* tree, const char* filename, FileType type) {
 }
 
 /**
- * @brief 加載二叉樹從文件（中序遍歷）
+ * @brief 加載二元樹從文件（中序遍歷）
  *
- * 從指定的文本或二進制文件中加載二叉樹內容。此實現假設數據是按照中序遍歷順序存儲的。
+ * 從指定的文本或二進制文件中加載二元樹內容。此實現假設數據是按照中序遍歷順序存儲的。
  *
  * @param filename 文件名
  * @param type 文件類型（文本或二進制）
- * @return 指向加載後的二叉樹，如果加載失敗則返回 NULL
+ * @return 指向加載後的二元樹，如果加載失敗則返回 NULL
  */
 Tree* load_tree(const char* filename, FileType type) {
     if (!filename) return NULL;

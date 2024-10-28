@@ -1,4 +1,3 @@
-# Makefile
 
 CC = gcc
 CFLAGS = -I./include -Wall -Wextra -std=c11
